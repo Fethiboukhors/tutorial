@@ -3,11 +3,10 @@ import requests
 import socket
 def check_localhost():
         localhost = socket.gethostbyname("localhost")
-        if localhost = "127.0.0.1"
-                return True
+        if localhost == "127.0.0.1":
+            return True
 def check_connectivity():
         request = requests.get("http://www.google.com")
-        if status_code = 200
+        return request
+        if request == 200:
                 return True
-
-
